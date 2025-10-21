@@ -1,0 +1,88 @@
+body {
+    background-color: lightpink;
+    display: flex;
+    place-content: left;
+}
+
+.container {
+    width: 46%;
+    border: 10px red solid;
+}
+
+.container path {
+    fill: yellow;
+    stroke: brown;
+    stroke-width: 2px;
+}
+
+.container :hover {
+    fill: rgb(38, 161, 52);
+}
+
+.province.active {
+    fill: #ff9a00;
+    stroke-width: 2;
+}
+
+.info-panel{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-left: 4px solid #74b72e;
+}
+.panel-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #74b72e;
+}
+
+.panel-title {
+    font-size: 1.8rem;
+    color: #2d5016;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.category-title {
+    margin-top: 25px;
+    color: #2d5016;
+    border-left: 4px solid #74b72e;
+    padding-left: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
