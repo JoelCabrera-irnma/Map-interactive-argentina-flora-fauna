@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 body {
     background-color: lightpink;
     display: flex;
@@ -6,7 +18,15 @@ body {
 
 .container {
     width: 46%;
-    border: 10px red solid;
+    height: 100%;
+    border: 5px red solid;
+    overflow: hidden;
+}
+
+.container svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .container path {
@@ -41,6 +61,7 @@ body {
 .panel-title {
     font-size: 1.8rem;
     color: #2d5016;
+    margin: 0.2em
 }
 
 .image-gallery {
